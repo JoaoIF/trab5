@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 5(Parte 2)</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    
+    <div id="controle">
+        <label>Dimensões</label><span id="dms"></span><span id="dms1"></span><br>
+        Largura <input type="range" id="iptLargura" min="0" max="100" oninput="rangerL()" value="0">
+        <label id="lblLargura"></label><br>
+        Altura <input type="range" id="iptAltura" min="0" max="100" oninput="rangerA()" value="0">
+        <label id="lblAltura"></label><br>
+    </div><br><hr>
+
+    <div id="cores">
+        <label>Cores</label><span id="rgb"></span><br>
+        R <input type="range" id="iptRed" min="0" max="255" oninput="mudarCor()" value="0">
+        <label id="lblRed"></label><br>
+        G <input type="range" id="iptGreen" min="0" max="255" oninput="mudarCor()" value="0">
+        <label id="lblGreen"></label><br>
+        B <input type="range" id="iptBlue" min="0" max="255" oninput="mudarCor()" value="0">  
+        <label id="lblBlue"></label>
+    </div><br><hr>
+
+    <div class="position">
+        <label>Posição</label><br>
+        Top <input type="range" id="iptTop" min="0" max="160" oninput="changeTop()" value="0">
+        <label id="lblTop"></label><br>
+        Left <input type="range" id="iptLeft" min="0" max="250" oninput="changeLeft()" value="0">
+        <label id="lblLeft"></label> 
+    </div>
+    
+
+
+    <div class="outBox">
+        <div id="box"></div>    
+    </div>
+    
+
+    
+</body>
+</html>
